@@ -87,7 +87,9 @@ img{
 .hover-in-shadow:hover:after{
     box-shadow: var(--inner-shadow);
 }
-
+.align-items-center{
+    align-items: center;
+}
 /*------
 header
 ------*/
@@ -217,4 +219,49 @@ navigation menu
     position: absolute;
     font-size: 15px;
     color: var(--text-black-600);
+}
+
+/*----------
+home section
+----------*/
+.home-section .full-screen{
+    padding: 50px 0;
+    min-height: 100vh;
+}
+.home-section .home-text,
+.home-section .home-img{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+.home-section .home-text p{
+    color: var(--text-black-300);
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.home-section .home-text h2{
+    color: var(--text-black-900);
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0;
+}
+.home-section .home-text h1{
+    color: var(--text-black-700);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+}
+.home-section .home-img .img-box{
+    background-color: red;
+    max-width: 450px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+.home-section .home-img .img-box img{
+    width: 100%;
+    border-radius: 50%;
 }
