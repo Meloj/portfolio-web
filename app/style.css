@@ -19,7 +19,9 @@ global style
     --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
     --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-size: 16px;
     line-height: 1.5;
@@ -293,7 +295,7 @@ home section
     margin: 0;
 }
 .home-section .home-img .img-box{
-    background-color: red;
+    background-color: #8B0000;
     max-width: 450px;
     display: block;
     margin: auto;
@@ -312,7 +314,7 @@ about section
     min-height: 100vh;
 }
 .about-section .about-img{
-    background-color: blue;
+    background-color: #87CEEB;
     max-width: 450px;
     display: block;
     margin: auto;
@@ -359,37 +361,75 @@ about section
     line-height: 26px;
     margin-bottom: 15px;
     color: var(--text-black-600);
+    text-align: center;
 }
 .about-section .about-info span{
     font-weight: 600;
 }
-.about-section .about-info .btn-1{
-    margin:30px 20px 0 0;
-}
-.about-section .about-tabs .tab-item{
-    display: inline-block;
-    margin: 0 5px 10px;
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    font-size: 16px;
-    color: var(--text-black-600);
+
+/*--------------
+Projects section
+--------------*/
+
+.projects-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    background-color: #1C1C1C;
+  }
+.card {
+    width: 18rem;
+    height: 25rem;
+    position: relative;
+  }
+  .card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: 0.5rem;
+  }
+  .card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  .card:hover .card-img-wrapper img {
+    opacity: 0.5;
+  }
+  .card-info {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 2rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+  }
+  .card-info h2 {
+    font-size: 2rem;
     font-weight: 500;
-    text-transform: capitalize;
-}
-.about-section .about-tabs .tab-item:hover:not(.active){
-    opacity:0.6;
-}
-.about-section .about-tabs .tab-item.active{
-    color: var(--skin-color);
-}
-.about-section .tab-content{
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.about-section .skills .skill-item{
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 15px;
-}
+    color: #eee;
+  }
+  .card-info h3 {
+    font-weight: bolder;
+    color: #ff4081;
+    margin-bottom: 1.5rem;
+  }
+  .card-info p {
+    color: #eee;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .card-info button {
+    width: 8rem;
+    height: 2.5rem;
+  }
+  .card:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+  }
