@@ -371,65 +371,89 @@ about section
 Projects section
 --------------*/
 
-.projects-section {
+.projects-section{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 2rem;
     background-color: #1C1C1C;
-  }
+    padding: 80px 0 80px;
+    min-height: 100vh;
+}
 .card {
     width: 18rem;
     height: 25rem;
     position: relative;
+    padding: 10px;
   }
-  .card-img-wrapper {
+.card-img-wrapper{
     width: 100%;
     height: 100%;
     background-color: #262626;
     border-radius: 0.5rem;
-  }
-  .card-img-wrapper img {
+}
+.card-img-wrapper img{
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
     opacity: 0.8;
     transition: opacity 0.3s;
-  }
-  .card:hover .card-img-wrapper img {
+}
+.card:hover .card-img-wrapper img {
     opacity: 0.5;
-  }
-  .card-info {
+}
+.card-info {
     position: absolute;
     bottom: 0;
     opacity: 0;
     visibility: hidden;
-    padding: 2rem;
+    padding: 1rem;
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
     transition: all 0.3s;
-  }
-  .card-info h2 {
+}
+.card-info h2 {
     font-size: 2rem;
     font-weight: 500;
     color: #eee;
-  }
-  .card-info h3 {
+}
+.card-info h3 {
     font-weight: bolder;
     color: #ff4081;
     margin-bottom: 1.5rem;
-  }
-  .card-info p {
+}
+.card-info p {
     color: #eee;
     font-weight: 400;
     width: 80%;
     margin-bottom: 2rem;
-  }
-  .card-info button {
+}
+.card-info button {
     width: 8rem;
     height: 2.5rem;
-  }
-  .card:hover .card-info {
+}
+.card:hover .card-info {
     bottom: 2rem;
     opacity: 1;
     visibility: visible;
-  }
+}
+.experience-section .experience{
+    padding: 80px;
+}
+.experience-section .timeline{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.experience-section .timeline .timeline-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.experience-section .timeline .timeline-item:nth-child(odd){
+    padding-right: calc(50% + 50px);
+    text-align: right;
+}
+.experience-section .timeline .timeline-item:nth-child(even){
+    padding-left: calc(50% + 50px);
+}
+.experience-section .timeline .timeline-item-inner{
+    padding: 30px;
+    border-radius: 5px;
+}
