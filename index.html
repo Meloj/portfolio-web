@@ -18,11 +18,11 @@
     <!--Font Awesome-->
     <link rel="stylesheet" type="text/css" href="app/font-awesome.css"
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" type="text/css" href="app/style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" type="text/css" href="app/skins/color-1.css">
     <title>João Paulo Dev</title>
 </head>
-
+<body>
 <!-- Header start -->
 <header class="header">
     <div class="container">
@@ -43,20 +43,22 @@
     <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
     <div class="nav-menu-inner">
         <ul>
-            <li><a href="#" class="inner-shadow active">Início</a></li>
-            <li><a href="#about-section" class="outer-shadow hover-in-shadow">Sobre Mim</a></li>
-            <li><a href="#projects-section" class="outer-shadow hover-in-shadow">Projetos</a></li>
-            <li><a href="#experience-section" class="outer-shadow hover-in-shadow">Experiências</a></li>
-            <li><a href="#" class="outer-shadow hover-in-shadow">Contato</a></li>
+            <li><a href="#home" class="link-item inner-shadow active">Início</a></li>
+            <li><a href="#about" class="link-item outer-shadow hover-in-shadow">Sobre Mim</a></li>
+            <li><a href="#projects" class="link-item outer-shadow hover-in-shadow">Projetos</a></li>
+            <li><a href="#experiences" class="link-item outer-shadow hover-in-shadow">Experiências</a></li>
+            <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contato</a></li>
         </ul>
     </div>
     <!-- copyright text-->
     <p class="copyright-text">Code by @João Paulo Melo</p>
 </nav>
+<div class="fade-out-effect">
+</div>
 <!-- Navigation menu end-->
 
 <!-- Home section start-->
-<section class="home-section section">
+<section class="home-section section active" id="home">
     <div class="container">
         <div class="row full-screen align-items-center">
             <div class="home-text">
@@ -75,11 +77,11 @@
 <!-- Home section end-->
 
 <!-- About section start-->
-<section class="about-section section">
+<section class="about-section section" id="about">
     <div class="container">
         <div class="row">
             <div class="section-title">
-                <h2 data-heading="main info">Sobre mim</h2>
+                <h2 data-heading="um pouco">Sobre mim</h2>
             </div>
         </div>
         <div class="row">
@@ -99,6 +101,7 @@
                 <p>KANBAN, Scrum</p>
                 <p>GIT</p>
                 <p>Amazon Web Services (AWS), Docker</p>
+                <p>RPA com Automation Anywhere</p>
                 <p>Fluência em Inglês</p>
                 <a href="documents/JoaoPauloBarretoDeMeloCVTI.pdf" class="btn-1 outer-shadow hover-in-shadow" target="_blank">Download do meu CV</a>
                 <!-- Social links start-->
@@ -112,69 +115,71 @@
 <!-- About section end-->
 
 <!-- Projects section start -->
-<section class="projects-section section">
-    <div class="row">
-        <div class="section-title">
-            <h2 data-heading="main info">Projetos</h2>
+<section class="projects-section section" id="projects">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2 data-heading="meus">Projetos</h2>
+            </div>
+            <!--Card start-->
+            <div class="card">
+                <div class="card-img-wrapper">
+                <img src="images/futbot.jpeg" alt="imagem do projeto Futbot" />
+                </div>
+                <div class="card-info">
+                <h2>Futbot</h2>
+                <h3>Python</h3>
+                <p>O futbot é um bot que é acionado através de um gatilho, no aplicativo de voz Discord. A função do bot é mostrar de forma atualizada a tabela do Campeonato Brasileiro de Futebol.</p>
+                <a href="https://github.com/Meloj/futbot-python" target="_blank"><button class="btn">Saiba Mais</button></a>
+                </div>
+            </div>
+            <!--Card end-->
+            <!--Card start-->
+            <div class="card">
+                <div class="card-img-wrapper">
+                <img src="images//calcjs.jpeg" alt="imagem do projeto Calculadora" />
+                </div>
+                <div class="card-info">
+                <h2>Calculadora JavaScript</h2>
+                <h3>Javascript</h3>
+                <p>Calculadora desenvolvida como exemplo do Curso Completo de JavaScript na Udemy.com.</p>
+                <a href="https://github.com/Meloj/Curso-JavaScript---Projeto-Calculadora" target="_blank"><button class="btn">Saiba Mais</button></a>
+                </div>
+            </div>
+            <!--Card end-->
+            <!--Card start-->
+            <div class="card">
+                <div class="card-img-wrapper">
+                <img src="images//quickquizz.png" alt="imagem do projeto Quick Quizz" />
+                </div>
+                <div class="card-info">
+                <h2>Quick Quizz</h2>
+                <h3>Javascript</h3>
+                <p>Quick Quizz usando HTML, CSS e JavaScript</p>
+                <a href="https://github.com/Meloj/quick-quizz" target="_blank"><button class="btn">Saiba Mais</button></a>
+                </div>
+            </div>
+            <!--Card end-->
+            <!--Card start-->
+            <div class="card">
+                <div class="card-img-wrapper">
+                <img src="images/portfolio.png" alt="imagem do projeto Portfolio" />
+                </div>
+                <div class="card-info">
+                <h2>Este Portfolio!</h2>
+                <h3>JavaScript</h3>
+                <p>Criado para melhor me apresentar e apresentar meus projetos e experiências</p>
+                <a href="https://github.com/Meloj/portfolio-web" target="_blank"><button class="btn">Saiba Mais</button></a>
+                </div>
+            </div>
+            <!--Card end-->
         </div>
-        <!--Card start-->
-        <div class="card">
-            <div class="card-img-wrapper">
-              <img src="images/futbot.jpeg" alt="imagem do projeto Futbot" />
-            </div>
-            <div class="card-info">
-              <h2>Futbot</h2>
-              <h3>Python</h3>
-              <p>O futbot é um bot que é acionado através de um gatilho, no aplicativo de voz Discord. A função do bot é mostrar de forma atualizada a tabela do Campeonato Brasileiro de Futebol.</p>
-              <a href="https://github.com/Meloj/futbot-python" target="_blank"><button class="btn">Saiba Mais</button></a>
-            </div>
-        </div>
-        <!--Card end-->
-        <!--Card start-->
-        <div class="card">
-            <div class="card-img-wrapper">
-              <img src="images//calcjs.jpeg" alt="imagem do projeto Calculadora" />
-            </div>
-            <div class="card-info">
-              <h2>Calculadora JavaScript</h2>
-              <h3>Javascript</h3>
-              <p>Calculadora desenvolvida como exemplo do Curso Completo de JavaScript na Udemy.com.</p>
-              <a href="https://github.com/Meloj/Curso-JavaScript---Projeto-Calculadora" target="_blank"><button class="btn">Saiba Mais</button></a>
-            </div>
-        </div>
-        <!--Card end-->
-        <!--Card start-->
-        <div class="card">
-            <div class="card-img-wrapper">
-              <img src="images//quickquizz.png" alt="imagem do projeto Quick Quizz" />
-            </div>
-            <div class="card-info">
-              <h2>Quick Quizz</h2>
-              <h3>Javascript</h3>
-              <p>Quick Quizz usando HTML, CSS e JavaScript</p>
-              <button class="btn">Saiba Mais</button>
-            </div>
-        </div>
-        <!--Card end-->
-        <!--Card start-->
-        <div class="card">
-            <div class="card-img-wrapper">
-              <img src="images/portfolio.png" alt="imagem do projeto Portfolio" />
-            </div>
-            <div class="card-info">
-              <h2>Este Portfolio!</h2>
-              <h3>HTML + CSS</h3>
-              <p>Criado para melhor me apresentar e apresentar meus projetos e experiências</p>
-              <button class="btn">Saiba Mais</button>
-            </div>
-        </div>
-        <!--Card end-->
-    </div>
+    </div>    
 </section>
 <!-- Projects section end -->
 
 <!-- Experience section start-->
-<section class="experience-section section">
+<section class="experience-section section" id="experiences">
     <div class="row">
         <div class="section-title">
             <h2 data-heading="main info">Experiências</h2>
@@ -254,4 +259,72 @@
                 </div>
             </div>
         </div>
+    </div>    
+</section>    
 <!-- Experience section end-->
+<!-- Contact section start-->
+<section class="contact-section section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2 data-heading="se curtiu">Entre em contato</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Contact item start-->
+            <div class="contact-item">
+                <div class="contact-item-inner outer-shadow">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                    <p>meloj0299@gmail.com</p>
+                </div>
+            </div>
+            <!-- Contact item end-->
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-melo-75aa81162/" target="_blank"><div class="contact-item">
+                <div class="contact-item-inner outer-shadow">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                    <p>João Paulo Melo</p>
+                </div></a>
+            </div>
+            <!-- Contact item end-->
+        </div>
+        <div class="row">
+            <div class="contact-form">
+                <form>
+                    <div class="row">
+                        <div class="w-50">
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <input type="text" placeholder="Nome" class="input-control">
+                            </div>
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <input type="text" placeholder="Email" class="input-control">
+                            </div>
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <input type="text" placeholder="Titulo" class="input-control">
+                            </div>
+                        </div>
+                        <div class="w-50">
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <textarea class="input-control" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="submit-btn">
+                            <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Enviar Mensagem</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact section end-->
+<!-- copyright text-->
+<p class="copyright-text">Code by @João Paulo Melo</p>
+
+<!-- Main JS-->
+<script src="js/main.js"></script>
+</body>
+</html>
