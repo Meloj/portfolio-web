@@ -373,13 +373,12 @@ Projects section
 
 .projects-section{
     display: flex;
-    justify-content: space-evenly;
-    background-color: #1C1C1C;
+    justify-content: center;
     padding: 80px 0 80px;
     min-height: 100vh;
 }
 .card {
-    width: 18rem;
+    width: 20rem;
     height: 25rem;
     position: relative;
     padding: 10px;
@@ -427,8 +426,10 @@ Projects section
     margin-bottom: 2rem;
 }
 .card-info button {
+    display: inline-block;
     width: 8rem;
     height: 2.5rem;
+    text-align: center;
 }
 .card:hover .card-info {
     bottom: 2rem;
@@ -441,6 +442,16 @@ Projects section
 .experience-section .timeline{
     flex: 0 0 100%;
     max-width: 100%;
+    position: relative;
+}
+.experience-section .timeline:before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    left: 50%;
+    top: 0%;
+    background-color: var(--bg-black-100);
+    position: absolute;
 }
 .experience-section .timeline .timeline-item{
     flex: 0 0 100%;
@@ -456,4 +467,50 @@ Projects section
 .experience-section .timeline .timeline-item-inner{
     padding: 30px;
     border-radius: 5px;
+    position: relative;
+}
+.experience-section .timeline .timeline-item-inner .icon{
+    height: 40px;
+    width: 40px;
+    background-color: var(--bg-black-50);
+    text-align: center;
+    border: 1px solid var(--bg-black-100);
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--skin-color);
+    position: absolute;
+    top: 18px;
+}
+.experience-section .timeline .timeline-item:nth-child(odd) .icon{
+    right: -70px;
+}
+.experience-section .timeline .timeline-item:nth-child(even) .icon{
+    left: -70px;
+}
+.experience-section .timeline .timeline-item-inner span{
+    font-weight: 500;
+    color: var(--skin-color);
+    display: block;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+}
+.experience-section .timeline .timeline-item-inner h3{
+    font-size: 20px;
+    color: var(--text-black-700);
+    font-weight: 600;
+    margin: 0 0 5px;
+    text-transform: capitalize;
+}
+.experience-section .timeline .timeline-item-inner h4{
+    font-size: 16px;
+    font-style: italic;
+    color: var(--text-black-600);
+    margin: 0;
+}
+.experience-section .timeline .timeline-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-600);
+    line-height: 26px;
+    margin: 15px 0 0;
 }
