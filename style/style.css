@@ -319,7 +319,6 @@ img {
     padding: .5rem 1rem;
     margin-bottom: var(--mb-4);
     border-radius: .7rem;
-    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 }
 
 .skills__icon {
@@ -474,11 +473,11 @@ img {
         text-align: center;
     }
     .skills__container {
-        display: grid;
-        grid-template-columns: 200px 200px 200px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
     }
     .skills__data {
-        background-color: var(--first-color);;
+        background-color: var(--first-color);
     }
     .about__img img {
         width: 300px;
