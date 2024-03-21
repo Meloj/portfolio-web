@@ -450,7 +450,7 @@ img {
 
 /* ==== MEDIA QUERIES ====*/
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:765px) {
     body {
         margin: 0;
     }
@@ -542,6 +542,7 @@ img {
         margin-right: auto;
     }
     .home__img {
+        top: 30%;
         right: 10%;
     }
 }
