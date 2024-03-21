@@ -1,330 +1,247 @@
 <!DOCTYPE html>
-<html lang="br" dir="ltr">
+<html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8S6KQKTCN1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-8S6KQKTCN1');
-    </script>
-    <!--FIM DO Google Analytics-->
-    <meta charset="utf-8">
-    <!--displays site properly based on the device-->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Font Awesome-->
-    <link rel="stylesheet" type="text/css" href="app/font-awesome.css"
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" type="text/css" href="app/skins/color-1.css">
-    <title>João Paulo Dev</title>
+
+    <link rel="stylesheet" href="/style/style.css">
+    
+    <!-- =====DEV ICONS===== -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>João Paulo Melo Portfolio</title>
 </head>
+
 <body>
-<!-- Header start -->
-<header class="header">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="logo">
-                <a href="index.html">J</a>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">João Paulo</a>
             </div>
-            <div class="hamburger-btn outer-shadow hover-in-shadow">
-                <span></span>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- Header end -->
 
-<!-- Navigation menu start-->
-<nav class="nav-menu">
-    <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
-    <div class="nav-menu-inner">
-        <ul>
-            <li><a href="#home" class="link-item inner-shadow active">Início</a></li>
-            <li><a href="#about" class="link-item outer-shadow hover-in-shadow">Sobre Mim</a></li>
-            <li><a href="#projects" class="link-item outer-shadow hover-in-shadow">Projetos</a></li>
-            <li><a href="#experiences" class="link-item outer-shadow hover-in-shadow">Experiências</a></li>
-            <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contato</a></li>
-        </ul>
-    </div>
-    <!-- copyright text-->
-    <p class="copyright-text">Code by @João Paulo Melo</p>
-</nav>
-<div class="fade-out-effect">
-</div>
-<!-- Navigation menu end-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Início</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Conhecimentos</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projetos Pessoais</a></li>
+                    <!--=====<li class="nav__item"><a href="#contact" class="nav__link">Experiências Profissionais</a></li>=====-->
+                </ul>
+            </div>
 
-<!-- Home section start-->
-<section class="home-section section active" id="home">
-    <div class="container">
-        <div class="row full-screen align-items-center">
-            <div class="home-text">
-                <p>Olá</p>
-                <h2>Eu sou João Paulo</h2>
-                <h1>Desenvolvedor</h1>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
             </div>
-            <div class="home-img">
-                <div class="img-box">
-                    <img src="images/joaopaulo.png" alt="profile-pic">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Home section end-->
+        </nav>
+    </header>
 
-<!-- About section start-->
-<section class="about-section section" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="section-title">
-                <h2 data-heading="um pouco">Sobre mim</h2>
+    <!--===== HOME =====-->
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Olá!<br>Sou <span class="home__title-color">João Paulo</span><span>,</span><br>Devesenvolvedor</h1>
             </div>
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-melo/" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/Meloj" class="home__social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
+            </div>
+            <div class="home__img">
+                <img src="/images/joaopaulo.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+        <h2 class="section-title">Sobre</h2>
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="/images/joaopaulo2.png" alt="">
+            </div>
+            <p class="about__text">
+                Bacharel em Sistemas de Informação pela Unilasalle-RJ, sou <span class="home__title-color">apaixonado por tecnologias inovadoras</span> e estou constantemente em busca de atualizações para aprimorar meus conhecimentos.<br>Tenho grande afinidade em compartilhar meu saber, <span class="home__title-color">entusiasmando e capacitando</span> colegas.
+                Busco ativamente materiais de estudo de qualidade para me manter atualizado e <span class="home__title-color">contribuir significativamente</span> para os desafios tecnológicos do cenário atual.<br> Meu ambiente de trabalho ideal é aquele em que a <span class="home__title-color">colaboração é valorizada</span>, promovendo um espírito de equipe que resulta em um ambiente saudável e amigável.
+                Estou <span class="home__title-color">comprometido</span> em contribuir para o sucesso da equipe, combinando meu conhecimento técnico com habilidades interpessoais para construir relacionamentos sólidos. <br>Sou <span class="home__title-color">motivado</span> pela oportunidade de enfrentar <span class="home__title-color">desafios e de crescer profissionalmente</span> em um ambiente dinâmico e inovador.
+                
+            </p>
         </div>
-        <div class="row">
-            <div class="about-img">
-                <div class="img-box">
-                    <img src="images/joaopaulo2.png" alt="profile-pic">
-                </div>
-            </div>    
-            <div class="about-info">
-                <p><span>Olá! Me chamo João Paulo, tenho 22 anos e sou morador de Niterói - RJ.</p>
-                <p>Sou aluno de Sistemas de Informação na Unilasalle-RJ. Tenho interesses por tecnologias novas
-                    e inovadoras. Gosto de ensinar e empolgar as pessoas, então me manter atualizado é essencial, buscando sempre bons materiais de estudo.
-                    Meu ambiente de trabalho ideal é aquele onde os companheiros podem contar uns com os outros. O trabalho em equipe nos leva a um ambiente saudável e amigável.
-                    Possuo conhecimentos em:</p>
-                <p>Python, JavaScript, HTML, CSS, C</p>
-                <p>SQL, PL/SQL</p>
-                <p>KANBAN, Scrum</p>
-                <p>GIT</p>
-                <p>Amazon Web Services (AWS), Docker</p>
-                <p>RPA com Automation Anywhere</p>
-                <p>Fluência em Inglês</p>
-                <a href="documents/JoaoPauloBarretoDeMeloCVTI.pdf" class="btn-1 outer-shadow hover-in-shadow" target="_blank">Download do meu CV</a>
-                <!-- Social links start-->
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-melo-75aa81162/" class="outer-shadow hover-in-shadow" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <!-- Social links end-->
-        </div>
-    </div>
-</section>
-<!-- About section end-->
-
-<!-- Projects section start -->
-<section class="projects-section section" id="projects">
-    <div class="container">
-        <div class="row">
-            <div class="section-title">
-                <h2 data-heading="meus">Projetos</h2>
-            </div>
-            <!--Card start-->
-            <div class="card">
-                <div class="card-img-wrapper">
-                <img src="images/futbot.jpeg" alt="imagem do projeto Futbot" />
-                </div>
-                <div class="card-info">
-                <h2>Futbot</h2>
-                <h3>Python</h3>
-                <p>O futbot é um bot que é acionado através de um gatilho, no aplicativo de voz Discord. A função do bot é mostrar de forma atualizada a tabela do Campeonato Brasileiro de Futebol.</p>
-                <a href="https://github.com/Meloj/futbot-python" target="_blank"><button class="btn">Saiba Mais</button></a>
-                </div>
-            </div>
-            <!--Card end-->
-            <!--Card start-->
-            <div class="card">
-                <div class="card-img-wrapper">
-                <img src="images//calcjs.jpeg" alt="imagem do projeto Calculadora" />
-                </div>
-                <div class="card-info">
-                <h2>Calculadora JavaScript</h2>
-                <h3>Javascript</h3>
-                <p>Calculadora desenvolvida como exemplo do Curso Completo de JavaScript na Udemy.com.</p>
-                <a href="https://github.com/Meloj/Curso-JavaScript---Projeto-Calculadora" target="_blank"><button class="btn">Saiba Mais</button></a>
-                </div>
-            </div>
-            <!--Card end-->
-            <!--Card start-->
-            <div class="card">
-                <div class="card-img-wrapper">
-                <img src="images//quickquizz.png" alt="imagem do projeto Quick Quizz" />
-                </div>
-                <div class="card-info">
-                <h2>Quick Quizz</h2>
-                <h3>Javascript</h3>
-                <p>Quick Quizz usando HTML, CSS e JavaScript</p>
-                <a href="https://github.com/Meloj/quick-quizz" target="_blank"><button class="btn">Saiba Mais</button></a>
-                </div>
-            </div>
-            <!--Card end-->
-            <!--Card start-->
-            <div class="card">
-                <div class="card-img-wrapper">
-                <img src="images/portfolio.png" alt="imagem do projeto Portfolio" />
-                </div>
-                <div class="card-info">
-                <h2>Este Portfolio!</h2>
-                <h3>JavaScript</h3>
-                <p>Criado para melhor me apresentar e apresentar meus projetos e experiências</p>
-                <a href="https://github.com/Meloj/portfolio-web" target="_blank"><button class="btn">Saiba Mais</button></a>
-                </div>
-            </div>
-            <!--Card end-->
-        </div>
-    </div>    
-</section>
-<!-- Projects section end -->
-
-<!-- Experience section start-->
-<section class="experience-section section" id="experiences">
-    <div class="row">
-        <div class="section-title">
-            <h2 data-heading="main info">Experiências</h2>
-        </div>
-        <div class="experience tab-content">
-            <div class="row">
-                <div class="timeline">
-                    <div class="row">
-                        <!--Timeline item start-->
-                        <div class="timeline-item">
-                            <div class="timeline-item-inner outer-shadow">
-                                <i class="fas fa-graduation-cap icon"></i>
-                                <span>02/2017</span>
-                                <h3>Ingresso como Aluno de Sistemas de Informação</h3>
-                                <h4>Unilasalle-RJ</h4>
-                                <p></p>
-                            </div>
-                        </div>
-                        <!--Timeline item end-->
-                        <!--Timeline item start-->
-                        <div class="timeline-item">
-                            <div class="timeline-item-inner outer-shadow">
-                                <i class="fas fa-briefcase icon"></i>
-                                <span>06/2018</span>
-                                <h3>Estagiário de Desenvolvimento(Suporte)</h3>
-                                <h4>M4U</h4>
-                                <p>Atuei como suporte na certificação de aplicativos enviados pelos desenvolvedores parceiros para
-                                    entrarem nas lojas de aplicativos da LIO.
-                                    Também atuei como suporte no processo de cadastro dos desenvolvedores e dos aplicativos nas
-                                    lojas da LIO.</p>
-                            </div>
-                        </div>
-                        <!--Timeline item end-->
-                        <!--Timeline item start-->
-                        <div class="timeline-item">
-                            <div class="timeline-item-inner outer-shadow">
-                                <i class="fas fa-briefcase icon"></i>
-                                <span>06/2019</span>
-                                <h3>Estagiário de Desenvolvimento</h3>
-                                <h4>M4U</h4>
-                                <p>Nesta parte do meu estágio, atuei primeiramente como suporte dos desenvolvedores.
-                                    Neste tipo de suporte as tarefas atribuidas eram de procura por bugs no codigo do parceiro, ou
-                                    demais dificuldades tecnicas que apareciam.
-                                    Com essas atividades tive uma maior proximidade com os códigos dos apps.
-                                    No final do meu estágio migrei para uma equipe de desenvolvedores fullstack e passei a atuar no
-                                    desenvolvimento de nossas aplicações internas.</p>
-                            </div>
-                        </div>
-                        <!--Timeline item end-->
-                        <!--Timeline item start-->
-                        <div class="timeline-item">
-                            <div class="timeline-item-inner outer-shadow">
-                                <i class="fas fa-briefcase icon"></i>
-                                <span>06/2020</span>
-                                <h3>Analista de Desenvolvimento Jr.</h3>
-                                <h4>M4U</h4>
-                                <p>Assim que fui efetivado, migrei para outra equipe dentro do projeto LIO,
-                                    essa agora era responsável pelo código dos Meios de Pagamento da maquininha CIELO LIO.</p>
-                            </div>
-                        </div>
-                        <!--Timeline item end-->
-                        <!--Timeline item start-->
-                        <div class="timeline-item">
-                            <div class="timeline-item-inner outer-shadow">
-                                <i class="fas fa-briefcase icon"></i>
-                                <span>08/2020 - 01/2021</span>
-                                <h3>Analista de Desenvolvimento Jr.</h3>
-                                <h4>Braspag</h4>
-                                <p>Após a migração do projeto para a Braspag, permaneci por mais alguns meses no time de Meios de
-                                    Pagamento.
-                                    Pouco antes do meu desligamento, atuei em outro time no qual as tarefas eram mais voltadas para
-                                    Web.</p>
-                            </div>
-                        </div>
-                        <!--Timeline item end-->
+    </section>
+    <br><br>
+    <!--===== SKILLS =====-->
+    <section class="work section" id="skills">
+        <h2 class="section-title">Conhecimentos</h2>
+        <div class="work__container bd-grid">
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class="devicon-javascript-plain skills__icon"></i>
+                        <span class="skills__name">JavaScript</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>    
-</section>    
-<!-- Experience section end-->
-<!-- Contact section start-->
-<section class="contact-section section" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="section-title">
-                <h2 data-heading="se curtiu">Entre em contato</h2>
-            </div>
-        </div>
-        <div class="row">
-            <!-- Contact item start-->
-            <div class="contact-item">
-                <div class="contact-item-inner outer-shadow">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                    <p>meloj0299@gmail.com</p>
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class="devicon-python-plain skills__icon"></i>
+                        <span class="skills__name">Python</span>
+                    </div>
                 </div>
             </div>
-            <!-- Contact item end-->
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-melo-75aa81162/" target="_blank"><div class="contact-item">
-                <div class="contact-item-inner outer-shadow">
-                    <i class="fab fa-linkedin-in"></i>
-                    <span>LinkedIn</span>
-                    <p>João Paulo Melo</p>
-                </div></a>
-            </div>
-            <!-- Contact item end-->
-        </div>
-        <div class="row">
-            <div class="contact-form">
-                <form>
-                    <div class="row">
-                        <div class="w-50">
-                            <div class="input-group outer-shadow hover-in-shadow">
-                                <input type="text" placeholder="Nome" class="input-control">
-                            </div>
-                            <div class="input-group outer-shadow hover-in-shadow">
-                                <input type="text" placeholder="Email" class="input-control">
-                            </div>
-                            <div class="input-group outer-shadow hover-in-shadow">
-                                <input type="text" placeholder="Titulo" class="input-control">
-                            </div>
-                        </div>
-                        <div class="w-50">
-                            <div class="input-group outer-shadow hover-in-shadow">
-                                <textarea class="input-control" placeholder="Message"></textarea>
-                            </div>
-                        </div>
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='devicon-csharp-plain skills__icon'></i>
+                        <span class="skills__name">C#</span>
                     </div>
-                    <div class="row">
-                        <div class="submit-btn">
-                            <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Enviar Mensagem</button>
-                        </div>
-                    </div>
-                </form>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- Contact section end-->
-<!-- copyright text-->
-<p class="copyright-text">Code by @João Paulo Melo</p>
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-html5 skills__icon'></i>
+                        <span class="skills__name">HTML5</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='devicon-css3-plain skills__icon'></i>
+                        <span class="skills__name">CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='devicon-unity-plain skills__icon'></i>
+                        <span class="skills__name">UNITY</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='devicon-azuresqldatabase-plain skills__icon'></i>
+                        <span class="skills__name">SQL/PLSQL</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='devicon-amazonwebservices-plain-wordmark skills__icon'></i>
+                        <span class="skills__name">AWS</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='devicon-git-plain skills__icon'></i>
+                        <span class="skills__name">GIT</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <span class="skills__name">KANBAN</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <span class="skills__name">SCRUM</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <span class="skills__name">SIX SIGMA YELLOW BELT</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <br>
+    <!--===== WORK =====-->
+    <section class="work section" id="work">
+        <h2 class="section-title">Projetos Pessoais</h2>
+        <div class="work__container bd-grid">
+            <!--===== CARD =====-->
+            <div class="card work__img">
+                <div class="card-img-wrapper">
+                    <img src="/images/futbot.jpeg" alt="FutBot">
+                    <div class="card-info">
+                        <h3>Futbot</h2>
+                        <h3>Python</h3>
+                        <span class="home__title-color">O futbot é um bot que é acionado através de um gatilho, no aplicativo de voz Discord. A função do bot é mostrar de forma atualizada a tabela do Campeonato Brasileiro de Futebol. Esses dados são fornecidos por uma API.</p>
+                        <a href="https://github.com/Meloj/futbot-python" target="_blank"><button class="btn">Saiba Mais</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--===== CARD =====-->
+            <div class="card work__img">
+                <div class="card-img-wrapper">
+                    <img src="/images/CrossyRoad.jpg" alt="">
+                    <div class="card-info">
+                        <h3>CrossyRoad (Adaptado)</h2>
+                        <h3>Python, C# e UNITY</h3>
+                        <span class="home__title-color">Em
+                            vez do tradicional teclado, as movimentações são capturadas pela
+                            webcam, permitindo que os jogadores controlem o game com gestos das
+                            mãos. Essa abordagem visa tornar os jogos mais inclusivos e acessíveis.</span>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7142269222394494976?utm_source=share&utm_medium=member_desktop" target="_blank"><button class="btn">Saiba Mais</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--===== CARD =====-->
+            <div class="card work__img">
+                <div class="card-img-wrapper">
+                    <img src="/images/pong.png" alt="">
+                    <div class="card-info">
+                        <h3>Pong</h2>
+                        <h3>C# e UNITY</h3>
+                        <span class="home__title-color">Clone do jogo Pong, de Atari. Feito para aprimorar meus conhecimentos em C# e sua integração com a Engine UNITY.</span>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7142269222394494976?utm_source=share&utm_medium=member_desktop" target="_blank"><button class="btn">Saiba Mais</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--===== CARD =====-->
+            <div class="card work__img">
+                <div class="card-img-wrapper">
+                    <img src="/images/portfolio.png" alt="">
+                    <div class="card-info">
+                        <h3>Este portfolio</h2>
+                        <h3>HTML, CSS e JavaScript</h3>
+                        <span class="home__title-color">Criado para melhor me apresentar e apresentar meus projetos e experiências</span>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7142269222394494976?utm_source=share&utm_medium=member_desktop" target="_blank"><button class="btn">Saiba Mais</button></a>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-<!-- Main JS-->
-<script src="js/main.js"></script>
+    <!--==== FOOTER ====-->
+    <footer class="footer">
+        <p class="footer__title">João Paulo</p>
+
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-melo/" target="_blank" class="footer__icon" ><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://github.com/Meloj" target="_blank" class=" footer__icon"><i class='bx bxl-github' ></i></a>
+        </div>
+    </footer>
+
+    <!--==== SCROLL REVEAL ====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--==== MAIN JS ====-->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
