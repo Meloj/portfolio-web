@@ -421,11 +421,102 @@ img {
 
 
 /* ==== MEDIA QUERIES ====*/
-@media screen and (max-width:764px) {
 
+/* ================ MAX 376 PX ================*/
+@media screen and (max-width:376px){
+    
     .bd-grid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .section-title {
+        margin-bottom: var(--mb-6);
+    }
+
+    .nav__logo {
+        color: var(--second-color);
+        font-size: 90%;
+        padding-left: 5px;
+    }
+
+    .nav__toggle{
+        padding-right: 5px;
+    }
+
+    .home__data{
+        padding-top: 99%;
+        margin-left: 45px;
+    }
+
+    .home__img {
+        left: 3%;
         margin-left: auto;
         margin-right: auto;
+        width: 200px;
+    }
+
+    .home__social {
+        margin-left: 11%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .home__social-icon {
+        color: var(--second-color);
+    }
+
+    .home__social-icon:hover {
+        color: var(--first-color);
+    }
+
+    .about__container {
+        align-items: center;
+        text-align:center;
+        padding: 0% 10% 0%;
+    }
+
+    .skills__subtitle {
+        text-align: center;
+    }
+
+    .skills__data {
+        background-color: var(--first-color);
+        font-size: 70%;
+    }
+
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 1rem;
+        width: 100%;
+        padding: 0px 5px 0px;
+    }
+
+    .work__container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        column-gap: 10px;
+        margin-left: 27px;
+    }
+}
+
+/* ================ MAX 376 PX ================
+@media screen and (min-width:377px) and (max-width:764px) {
+
+    .bd-grid {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     body {
@@ -445,35 +536,6 @@ img {
     .section-title::after {
         width: 80px;
         top: 3rem;
-    }
-
-    .nav {
-        height: calc(var(--header-height) + 1rem);
-    }
-
-    .nav__logo{
-        font-size: 130%;
-        padding-left: 30px;
-    }
-
-    .nav__list {
-        display: flex;
-        padding-top: 0;
-        padding-right: 30px;
-        font-size: 130%;
-    }
-
-    .nav__item {
-        margin-left: var(--mb-6);
-        margin-bottom: 0;
-    }
-
-    .nav__toggle {
-        display: none;
-    }
-
-    .nav__link {
-        color: var(--second-color);
     }
 
     #home{
@@ -554,6 +616,114 @@ img {
 
     .footer{
         width: 133%;
+    }
+} */
+
+/* ================ MAX 764 PX ================*/
+@media screen and (min-width:376px) and (max-width:764px) {
+
+    .bd-grid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .section-title {
+        margin-bottom: var(--mb-6);
+        margin-left: 255px;
+    }
+
+    .section-title::after {
+        width: 80px;
+        top: 3rem;
+    }
+
+    #home{
+        padding-bottom: 110%;
+    }
+
+    .home__data{
+        padding-top: 45%;
+        margin-left: 150px;
+    }
+
+    .home__img {
+        padding-top: 15%;
+        left: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+
+    .home__social {
+        margin-left: 11%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .home__social-icon {
+        width: max-content;
+        margin-bottom: var(--mb-2);
+        font-size: 3rem;
+        color: var(--second-color);
+        padding-left: 60px;
+    }
+    
+    .home__social-icon:hover {
+        color: var(--first-color);
+    }
+
+    .about__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: initial;
+        width: 100%;
+        padding: 30px;
+        margin-left: 150px;
+    }
+
+    .about__text {
+        text-align: initial;
+        font-size: 17px;
+    }
+
+    .about__img img {
+        margin-right: 100px;
+        width: 300px;
+    }
+    
+    .skills__subtitle {
+        text-align: center;
+    }
+
+    .skills__data {
+        background-color: var(--first-color);
+    }
+
+    .skills__container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 2rem;
+        width: 100%;
+        margin-left: 130px;
+    }
+
+    .work__container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .footer{
+        width: 134%;
     }
 }
 
