@@ -988,7 +988,7 @@ img {
         grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem;
         width: 100%;
-        margin-left: 250px;
+        margin-left: 12%;
     }
 
     .work__container {
