@@ -425,6 +425,42 @@ img {
     margin: 0 var(--mb-2)
 }
 
+.btn-2{
+    padding: 8px 25px;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(var(--hue-color), 56%, 12%);
+    background-color:#fff;
+    line-height: 1.5;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: none;
+}
+
+.btn-2:after{
+    border-radius: 30px;
+}
+
+.btn-3{
+    padding: 8px 25px;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(var(--hue-color), 56%, 12%);
+    background-color:#fff;
+    line-height: 1.5;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: none;
+}
+
+.btn-3:after{
+    border-radius: 30px;
+}
+
 
 /* ==== MEDIA QUERIES ====*/
 
